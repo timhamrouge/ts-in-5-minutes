@@ -1,4 +1,9 @@
-class Student {
+// tsc app.ts => to run
+// OR
+// npm start will compile this file
+
+
+class StudentProd {
     fullName: string;
     constructor(
       public firstName: string,
@@ -9,15 +14,15 @@ class Student {
     }
   }
   
-  interface Person {
+  interface PersonProd {
     firstName: string;
     lastName: string;
   }
   
-  function greeter(person: Person) {
+  function greeterProd(person: PersonProd) {
     return "Hello, " + person.firstName + " " + person.lastName;
   }
   
-  let user = new Student("Jane", "M.", "User");
+  let userProd = new StudentProd("Tim", "M.", "lastName");
   
-  document.body.textContent = greeter(user);
+  document.body.textContent = greeterProd(userProd);

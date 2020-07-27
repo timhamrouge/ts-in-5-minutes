@@ -30,3 +30,5 @@ function greeter3(person: Person2) {
 let user3 = new Student("Tim", "T", "lastName");
 
 document.body.textContent = greeter3(user3);
+
+// Classes in TypeScript are just a shorthand for the same prototype-based OO that is frequently used in JavaScript.
